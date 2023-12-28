@@ -1,0 +1,295 @@
+body{
+	background-color: rgb(24,24,24);
+}
+#Word{
+	color: white;
+	position:absolute;
+	top: calc(60% - 130px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.Gender_box{
+	position: absolute;
+	top: calc(60% - 18px);
+	left: calc(50% - 200px);
+}
+#Gender_input{
+	display: none;
+	width: 60px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: rgb(24,24,24);
+	color: white;
+	padding: 5px;
+	cursor: pointer;
+	font-size: auto;
+}
+#Noun_button{
+	display: none;
+	width: 80px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: rgb(24,24,24);
+	color: 	white;
+	padding: 5px;
+	cursor: pointer;
+	font-size: auto;
+
+}
+#Verb_button{
+	display: none;
+	width: 80px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: rgb(24,24,24);
+	color: 	white;
+	padding: 5px;
+	cursor: pointer;
+	font-size: auto;
+
+}
+#Create_button{
+	display: inline;
+	width: 80px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: rgb(24,24,24);
+	color: 	white;
+	padding: 5px;
+	cursor: pointer;
+	font-size: auto;
+	position: absolute;
+	top: calc(60% - 80px);
+	left: calc(50% - 150px);
+	transform: translate(-50%, -50%);
+
+}
+#Dictionary_name_box{
+	display: inline;
+	color: white;
+	background-color: rgb(24,24,24);
+	position: absolute;
+	width: 200px; 
+	height: 50px; 
+	border-radius: 5px;
+	top: calc(60% - 80px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#Word_box{
+	display: none;
+	color: white;
+	background-color: rgb(24,24,24);
+	position: absolute;
+	width: 200px; 
+	height: 50px; 
+	border-radius: 5px;
+	top: calc(60% - 80px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.Gender_box a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+}
+.Gender_box .content{
+	margin-left: -20px;
+	display: none;
+	position: absolute;
+	background-color: rgb(33,33,33);
+	min-width: 100px;
+	box-shadow: 2px 2px 5px black;
+}
+.Gender_box:hover input{
+	background-color: white;
+}
+
+#Answer_box{
+	display: none;
+	color: white;
+	background-color: rgb(24,24,24);
+	position: absolute;
+	width: 200px; 
+	height: 50px; 
+	border-radius: 5px;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+.Plural_box{
+	position: absolute;
+    top: calc(60%);
+	left: calc(50% + 178px);
+    transform: translate(-50%, -50%);
+}
+#Plural_input{
+	display: none;
+	width: 80px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: rgb(24,24,24);
+	color: 	white;
+	padding: 5px;
+	cursor: pointer;
+	font-size: auto;
+}
+.Plural_box a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+}
+.Plural_box .content{
+	margin-left: -20px;
+	display: none;
+	position: absolute;
+	background-color: rgb(33,33,33);
+	min-width: 100px;
+	box-shadow: 2px 2px 5px black;
+
+}
+.Plural_box:hover input{
+	background-color: white;
+	
+}
+
+
+
+
+#Infinitiv_box{
+	display: none;
+	color: white;
+	background-color: rgb(24,24,24);
+	position: absolute;
+	width: 200px; 
+	height: 50px; 
+	border-radius: 5px;
+	top: 60%;
+	left: calc(50% - 480px);
+	transform: translate(-50%, -50%);
+}
+#Präsens_box{
+	display: none;
+	color: white;
+	background-color: rgb(24,24,24);
+	position: absolute;
+	width: 200px; 
+	height: 50px; 
+	border-radius: 5px;
+	top: 60%;
+	left: calc(50% - 240px);
+	transform: translate(-50%, -50%);
+}
+#Präteritum_box{
+	display: none;
+	color: white;
+	background-color: rgb(24,24,24);
+	position: absolute;
+	width: 200px; 
+	height: 50px; 
+	border-radius: 5px;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#Isthat_box{
+	display: none;
+	color: white;
+	background-color: rgb(24,24,24);
+	position: absolute;
+	width: 200px; 
+	height: 50px; 
+	border-radius: 5px;
+	top: 60%;
+	left: calc(50% + 240px);
+	transform: translate(-50%, -50%);
+}
+#Perfekt_box{
+	display: none;
+	color: white;
+	background-color: rgb(24,24,24);
+	position: absolute;
+	width: 200px; 
+	height: 50px; 
+	border-radius: 5px;
+	top: 60%;
+	left: calc(50% + 480px);
+	transform: translate(-50%, -50%);
+}
+#wrong_gender{
+	display: none;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	position: absolute;
+	top: calc(65%);
+	left: calc(50% - 192px);
+}
+#wrong_answer{
+	display: none;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	position: absolute;
+	top: calc(65%);
+	left: calc(50% - 96px);
+}
+#wrong_plural{
+	display: none;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	position: absolute;
+	top: calc(65%);
+	left: calc(50% + 145px);
+}
+#wrong_infinitiv{
+	display: none;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	position: absolute;
+	top: calc(65%);
+	left: calc(50% - 573px);
+}
+#wrong_präsens{
+	display: none;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	position: absolute;
+	top: calc(65%);
+	left: calc(50% - 333px);
+}
+#wrong_präteritum{
+	display: none;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	position: absolute;
+	top: calc(65%);
+	left: calc(50% - 93px);
+}
+#wrong_isthat{
+	display: none;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	position: absolute;
+	top: calc(65%);
+	left: calc(50% + 147px);
+}
+#wrong_perfekt{
+	display: none;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	position: absolute;
+	top: calc(65%);
+	left: calc(50% + 387px);
+}

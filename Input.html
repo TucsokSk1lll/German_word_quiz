@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@import url(Main.css);
+	</style>
+</head>
+<body>
+	<div id="focusResetElement" tabindex="-1"></div>
+	
+	<button id="Noun_button"tabindex="1">Noun</button>
+	<button id="Verb_button"tabindex="2">Verb</button>
+	<button id="Create_button">Create</button>
+
+	<input id="Dictionary_name_box" type="text" placeholder="Name of the new Dictionary"></input>
+	<Input id="Word_box" type="text" placeholder="Word in your native"tabindex="3"></Input>
+
+	<div class="Gender_box" readonly="readonly" placeholder="Gender"></Input>
+		<input id="Gender_input" readonly="readonly" placeholder="Gender"></input>
+		<div class="content">
+			<a href=""id="Der"tabindex="-1">der</a>
+			<a href=""id="Die"tabindex="-1">die</a>
+			<a href=""id="Das"tabindex="-1">das</a>
+		</div>
+	</div>
+
+	<input id="Answer_box" type="text" placeholder="Answer" >
+
+	<input id="Infinitiv_box" type="text" placeholder="Infinitiv" >
+	<input id="Präsens_box" type="text" placeholder="Präsens" >
+	<input id="Präteritum_box" type="text" placeholder="Präteritum" >
+	<input id="Isthat_box" type="text" placeholder="ist/hat" >
+	<input id="Perfekt_box" type="text" placeholder="Perfekt" >
+
+	<div class="Plural_box">
+		<input id="Plural_input" readonly="readonly" placeholder="Plural"></input>
+		<div class="content">
+			<a href="-" id="-"tabindex="-1">-</a>
+			<a href="Umlaut"id="Umlaut"tabindex="-1">Umlaut</a>
+			<a href="-e"id="-e"tabindex="-1">-e</a>
+			<a href="Umlaut -e" id="Umlaut -e"tabindex="-1">Umlaut -e</a>
+			<a href="-er" id="-er"tabindex="-1">-er</a>
+			<a href="Umlaut -er" id="Umlaut -er"tabindex="-1">Umlaut -er</a>
+			<a href="-n" id="-n"tabindex="-1">-n</a>
+			<a href="-en" id="-en"tabindex="-1">-en</a>
+			<a href="-s" id="-s"tabindex="-1">-s</a>
+		</div>
+	</div>
+</body>
+
+<script src="Input.js"></script>
+<script src="Gender_input.js"></script>
+<script src="Plural_input.js"></script>
+<script src="Answer.js"></script>
+
+<script src="Infinitiv.js"></script>
+<script src="Präsens.js"></script>
+<script src="Präteritum.js"></script>
+<script src="Isthat.js"></script>
+<script src="Perfekt.js"></script>
+</html>
