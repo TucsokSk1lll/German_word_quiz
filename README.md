@@ -1,1 +1,1 @@
-Best Vocabulary learning tool ever.
+Best vocabulary learning tool ever.
