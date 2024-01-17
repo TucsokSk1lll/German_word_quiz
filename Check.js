@@ -32,16 +32,26 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag)
 
 	document.body.addEventListener('keydown', function(event){
 
-
 		if((event.key === 'Enter' && clickedin_gender === false && 
 		clickedin_answer === false && clickedin_plural === false && 
-		window.getComputedStyle(document.getElementById("Der").parentElement).display === 'none' &&
-		window.getComputedStyle(document.getElementById("-").parentElement).display === 'none'&&
+		window.getComputedStyle(document.getElementById("Der")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
+		window.getComputedStyle(document.getElementById("Die")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
+		window.getComputedStyle(document.getElementById("Das")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
+		window.getComputedStyle(document.getElementById("-")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
+		window.getComputedStyle(document.getElementById("Umlaut")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
+		window.getComputedStyle(document.getElementById("-e")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
+		window.getComputedStyle(document.getElementById("Umlaut -e")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
+		window.getComputedStyle(document.getElementById("-er")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
+		window.getComputedStyle(document.getElementById("Umlaut -er")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
+		window.getComputedStyle(document.getElementById("-n")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
+		window.getComputedStyle(document.getElementById("-en")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
+		window.getComputedStyle(document.getElementById("-s")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
 		window.getComputedStyle(document.getElementById("Infinitiv_box")).display === 'none') || 
 		(event.key === 'Enter' && clickedin_Infinitiv === false && 
 		clickedin_Präsens === false && clickedin_Präteritum === false &&
 		clickedin_Isthat === false && clickedin_Perfekt === false &&
 		window.getComputedStyle(document.getElementById("Answer_box")).display === 'none')){
+			
 			
 			if(checked_in === false){
 				checked_in = true

@@ -7,7 +7,7 @@ const Nouns = {
 	'Erdő':['Der','Wald','Umlaut -er'],
 };
 const Verbs = {
-	/*'megígér': ['versprechen','verspricht','versprach','hat','versprochen'],
+	'megígér': ['versprechen','verspricht','versprach','hat','versprochen'],
 	'megért': ['verstehen','versteht','verstand','hat','verstanden'],
 	'javasol': ['vorschlagen','schlägt vor','schlug vor','hat','vorgeschlagen'],
 	'bemutat(kozik)': ['vorstellen','stellt vor','stellte vor','hat','vorgestellt'],
@@ -20,7 +20,7 @@ const Verbs = {
 	'tud': ['wissen','weiß','wusste','hat','gewusst'],
 	'húz': ['ziehen','zieht','zog','hat','gezogen'],
 	'boldogul': ['zurechtkommen','kommt zurecht','kam zurecht','ist','zurechtgekommen'],
-	'visszajön': ['zurückkommen','kommt zurück','kam zurück','ist','zurückgekommen'],*/
+	'visszajön': ['zurückkommen','kommt zurück','kam zurück','ist','zurückgekommen']
 }
 
 var Noun_Hosszusag = 0;
