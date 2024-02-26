@@ -2,7 +2,6 @@ var clickedin_answer = false
 var Answer = document.getElementById("Answer_box").value;
 var lst_Answer = []
 	
-
 document.getElementById('Answer_box').style.display = 'none';
 
 document.getElementById('Answer_box').addEventListener("click", function(event){

@@ -52,6 +52,7 @@ document.getElementById('Gender_input').style.display = 'none';
 			}
 			document.getElementById('Gender_input').focus()
 			if(event.key === "Enter"  && Genderlist_string[index] !== undefined && checked_in === false){
+				console.log('enter')
 				document.getElementById("Gender_input").value = Genderlist_string[index];
 				document.querySelector(".gender_box .content").style.display = "none";
 				GenderList[index].style.backgroundColor = "rgb(33,33,33)";

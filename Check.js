@@ -10,11 +10,13 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag)
 	if(randomszam_alap < Noun_Hosszusag){
 		document.getElementById('Word').textContent = Object.keys(Nouns)[randomszam_alap];
 		NounorVerb = 'Noun'
+		console.log('GGGGGGGGGGG')
 	}
 	else{
 		randomszam_alap -= Noun_Hosszusag
 		document.getElementById('Word').textContent = Object.keys(Verbs)[randomszam_alap];
 		NounorVerb = 'Verb'
+		console.log('GGGGGGGGGGG')
 	}
 	
 	if(NounorVerb === 'Noun'){
@@ -47,9 +49,7 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag)
 		window.getComputedStyle(document.getElementById("-en")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
 		window.getComputedStyle(document.getElementById("-s")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
 		window.getComputedStyle(document.getElementById("Infinitiv_box")).display === 'none') || 
-		(event.key === 'Enter' && clickedin_Infinitiv === false && 
-		clickedin_Präsens === false && clickedin_Präteritum === false &&
-		clickedin_Isthat === false && clickedin_Perfekt === false &&
+		(event.key === 'Enter' &&
 		window.getComputedStyle(document.getElementById("Answer_box")).display === 'none')){
 			
 			
@@ -64,11 +64,17 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag)
 				randomszam = getRandomInt(0,Noun_Hosszusag+Verb_Hosszusag);
 				console.log('random szam (REGENERATED): '+randomszam)
 
-				if(randomszam_alap < Noun_Hosszusag){
+				if(randomszam < Noun_Hosszusag){
+					document.getElementById('Word').textContent = Object.keys(Nouns)[randomszam_alap];
 					NounorVerb = 'Noun'
+					console.log('GGGGGGGGGGG')
 				}
 				else{
+					randomszam -= Noun_Hosszusag
+					document.getElementById('Word').textContent = Object.keys(Verbs)[randomszam_alap];
+					randomszam += Noun_Hosszusag
 					NounorVerb = 'Verb'
+					console.log('GGGGGGGGGGG')
 				}
 
 
@@ -122,7 +128,6 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag)
 							if(Answer[i] !== undefined){
 								lst_Answer.push(Answer[i])
 							}
-							
 						}
 						
 						while(lst_Answer[0] === ' ' || lst_Answer[0] === undefined){
@@ -155,7 +160,7 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag)
 				}
 				
 
-
+				console.log('NounorVerb: '+NounorVerb)
 				if(NounorVerb === 'Noun'){
 					Answer = NoSpaces(document.getElementById('Answer_box').value,'Answer_box')
 				}
