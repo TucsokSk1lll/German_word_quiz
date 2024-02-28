@@ -6,7 +6,6 @@ var randomszam ;
 var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag)
 
 	
-
 	if(randomszam_alap < Noun_Hosszusag){
 		document.getElementById('Word').textContent = Object.keys(Nouns)[randomszam_alap];
 		NounorVerb = 'Noun'
