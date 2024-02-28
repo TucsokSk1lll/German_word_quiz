@@ -6,7 +6,7 @@ const Nouns = {
 	// 'Narancs':['Die', 'Orange','-n'],
 	// 'Erdő':['Der','Wald','Umlaut -er'],
 
-	'Kirándulás':["Der","ausflug", "Umlaut -e"],
+	/*'Kirándulás':["Der","ausflug", "Umlaut -e"],
 	"Kiállítás": ["Die", "ausstellung", "-en"],
 	"Kosárlabda": ["Der", "basketball", "Umlaut -e"],
 	"Biológia": ["Die", "biologie", ""],
@@ -19,10 +19,10 @@ const Nouns = {
 	"Fitnesszstúdió": ["Das", "fitness-studio", "-s"],
 	"péntek": ["Der", "freitag", "-e"],
 	"szabadidő": ["Die", "freizeit", ""],
-	"szabadidős tevékenység": ["Die", "freizeitaktivität", "-en"],
+	"szabadidős tevékenység": ["Die", "freizeitaktivität", "-en"],*/
 	"földrajz": ["Die", "geografie", ""],
-	"történelem": ["Die", "geschichte", ""],
-	"gimnasztika": ["Die", "gymnastik", ""],
+	"történelem": ["Die", "geschichte", "-"],
+	/*"gimnasztika": ["Die", "gymnastik", ""],
 	"kézilabda": ["Der", "handball", "Umlaut -e"],
 	"házi feladat": ["Die", "hausaufgabe", "-n"],
 	"informatika": ["Die", "informatik", ""],
@@ -46,10 +46,10 @@ const Nouns = {
 	"hét": ["Die", "woche", "-n"],
 	"hétvége": ["Das", "wochenende", "-n"],
 	"hétköznap": ["Der", "wochentag", "-e"],
-	"idő": ["Die", "zeit", "-en"],
+	"idő": ["Die", "zeit", "-en"],*/
 };
 const Verbs = {
-	 'megígér': ['versprechen','verspricht','versprach','hat','versprochen'],
+	/* 'megígér': ['versprechen','verspricht','versprach','hat','versprochen'],
 	 'megért': ['verstehen','versteht','verstand','hat','verstanden'],
 	 'javasol': ['vorschlagen','schlägt vor','schlug vor','hat','vorgeschlagen'],
 	 'bemutat(kozik)': ['vorstellen','stellt vor','stellte vor','hat','vorgestellt'],
@@ -62,7 +62,7 @@ const Verbs = {
 	 'tud': ['wissen','weiß','wusste','hat','gewusst'],
 	 'húz': ['ziehen','zieht','zog','hat','gezogen'],
 	 'boldogul': ['zurechtkommen','kommt zurecht','kam zurecht','ist','zurechtgekommen'],
-	 'visszajön': ['zurückkommen','kommt zurück','kam zurück','ist','zurückgekommen']
+	 'visszajön': ['zurückkommen','kommt zurück','kam zurück','ist','zurückgekommen']*/
 }
 
 var Noun_Hosszusag = 0;
