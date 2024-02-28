@@ -51,7 +51,6 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag)
 		(event.key === 'Enter' &&
 		window.getComputedStyle(document.getElementById("Answer_box")).display === 'none')){
 			
-			
 			if(checked_in === false){
 				checked_in = true
 			}
