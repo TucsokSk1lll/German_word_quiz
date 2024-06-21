@@ -15,8 +15,6 @@ var Button_Noun_or_Verb = undefined;
 /*console.log(document.getElementById('e1').offsetWidth + document.getElementById('e2').offsetWidth + document.getElementById('e3').offsetWidth +
 document.getElementById('e4').offsetWidth + document.getElementById('e5').offsetWidth + document.getElementById('e6').offsetWidth);*/
 
-var width = document.getElementById('e1').offsetWidth + document.getElementById('e2').offsetWidth + document.getElementById('e3').offsetWidth +
-document.getElementById('e4').offsetWidth + document.getElementById('e5').offsetWidth + document.getElementById('e6').offsetWidth;
 
 //console.log(document.getElementById('e1').offsetWidth);
 
@@ -285,20 +283,3 @@ document.body.addEventListener('keydown', function(event) {
 	}
 	
 });
-
-function sleep(ms) {
-	return new Promise(resolve => setTimeout(resolve, ms));
-  }
-  
-  async function wait(ms) {
-	await sleep(ms);
-  }
-  
-  
-  
-
-
-		
-  
-	
-  

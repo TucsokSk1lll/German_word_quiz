@@ -35,8 +35,8 @@ body{
 	cursor: pointer;
 	font-size: auto;
 	position: absolute;
-	top: calc(50% - 242px);
-	left: 5%;
+	top: calc(50% - 22px);
+	left: calc(50% - 200px);
 	transform: translate(-50%, -50%);
 }
 #Verb_button{
@@ -50,8 +50,8 @@ body{
 	cursor: pointer;
 	font-size: auto;
 	position: absolute;
-	top: calc(50% - 200px);
-	left: 5%;
+	top: calc(50% + 20px);
+	left: calc(50% - 200px);
 	transform: translate(-50%, -50%);
 }
 #Create_button{
