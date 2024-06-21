@@ -22,7 +22,6 @@ document.getElementById('e4').offsetWidth + document.getElementById('e5').offset
 
 
 
-document.getElementById('lokuki').style.width = width + 'px';
 
 document.getElementById('Create_button').addEventListener('click', function() {
 	Button_Noun_or_Verb = 'Noun';
@@ -286,24 +285,6 @@ document.body.addEventListener('keydown', function(event) {
 	}
 	
 });
-document.getElementById('lokuki').style.width = 0  + 'px';
-document.getElementById('lokuki').style.position = 'absolute';
-document.getElementById('lokuki').style.top = 'calc(60% - 380px)';
-document.getElementById('lokuki').style.left = 'calc(50% + 200px)';
-
-for(var i = 1; i < 7; i++) {
-	document.getElementById('lokuki').style.width = (document.getElementById('lokuki').offsetWidth + document.getElementById('e' + i).offsetWidth + 20) + 'px';
-}
-
-document.getElementById('lokuki').style.left = 'calc(' + document.getElementById('lokuki').style.left + ' + ' + document.getElementById('lokuki').offsetWidth / 2  + 'px)';
-document.getElementById('lokuki').style.left = 'calc(' + document.getElementById('lokuki').style.left + ' + 20px)';
-
-document.getElementById('lokuki').style.zIndex = '2';
-document.getElementById('lokuki2').style.zIndex = '2';
-document.getElementById('lokuki3').style.zIndex = '2';
-document.getElementById('lokuki4').style.zIndex = '2';
-document.getElementById('lokuki5').style.zIndex = '2';
-document.getElementById('lel').style.zIndex = '3';
 
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
@@ -313,85 +294,11 @@ function sleep(ms) {
 	await sleep(ms);
   }
   
-  //console.log(document.getElementById('lokuki').offsetWidth);
-  document.getElementById('lel').style.width = document.getElementById('lokuki').offsetWidth + 'px';
-  document.getElementById('lel').style.position = 'absolute';
-  document.getElementById('lel').style.top = document.getElementById('lokuki').offsetTop + 'px';
-  document.getElementById('lel').style.left = document.getElementById('lokuki').offsetLeft + 'px';
-  document.getElementById('lel').style.height = 200 + 'px';
   
-  document.getElementById('lel').style.left =
-	'calc(' + document.getElementById('lel').style.left + ' - ' + document.getElementById('lel').offsetWidth / 2 + 'px)';
-  document.getElementById('lel').style.top =
-	'calc(' + document.getElementById('lel').style.top + ' - ' + document.getElementById('lel').offsetTop / 2 + 'px)';
-  document.getElementById('lel').style.backgroundColor = 'rgba(0, 0, 0,0.2)';
   
-  document.getElementById('lel').addEventListener('mouseover', function () {
-	document.getElementById('lel').addEventListener('mouseout', function () {
-	  console.log('out');
-	  document.removeEventListener('wheel', wheelHandler);
-	});
-  
-index = 0;
-	document.addEventListener('wheel', (wheelHandler = async function (event) {
-		if (event.deltaY > 0) {
-			//console.log('Scrolled down');
-			//console.log(document.getElementById('lokuki').offsetTop);
-			
-			index-=1;
-			if (index === -3) {
-				document.getElementById('lokuki').style.top = 'calc(60% - 440px)';
-				index = 2;
-			}
-			if (index === -1) {
-				document.getElementById('lokuki5').style.top = 'calc(60% - 420px)';
-				//document.getElementById('lokuki4').style.top = 'calc(60% - 340px)';
-				document.getElementById('lokuki4').style.top = 'calc(' + document.getElementById('lokuki4').style.top + ' + ' + 20 + 'px)';
-			}
-			if (index === -2) {
-				document.getElementById('lokuki4').style.top = 'calc(60% - 420px)';
-			}
-			if (index === 1) {
-				document.getElementById('lokuki2').style.top = 'calc(60% - 420px)';
-			}
-			if (index === 0) {
-				document.getElementById('lokuki3').style.top = 'calc(60% - 420px)';
-			}
-			
-			//await wait(10);
-			console.log(index)
-			document.getElementById('lokuki').style.top = 'calc(' + document.getElementById('lokuki').style.top + ' + ' + 20 + 'px)';
-			
-			
-		}
-		if (event.deltaY < 0) {
-			//console.log('Scrolled up');
-			//console.log(document.getElementById('lokuki').offsetTop);
 
-			index+=1;
-			if (index === 3) {
-				document.getElementById('lokuki').style.top = 'calc(60% - 320px)';
-				index = -2;
-			}
-			else if (index === 1) {
-				document.getElementById('lokuki3').style.top = 'calc(60% - 340px)';
-			}
-			else if (index === 2) {
-				document.getElementById('lokuki2').style.top = 'calc(60% - 340px)';
-			}
-			else if (index === -1) {
-				document.getElementById('lokuki4').style.top = 'calc(60% - 340px)';
-			}
-			else if (index === 0) {
-				document.getElementById('lokuki5').style.top = 'calc(60% - 340px)';
-			}
-			document.getElementById('lokuki').style.top = 'calc(' + document.getElementById('lokuki').style.top + ' - ' + 20 + 'px)';
-			
-		}
+
 		
   
-		
-	  
-	}));
-  });
+	
   
