@@ -4,6 +4,7 @@ var checked_in = false
 var randomszam;
 
 var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag + Else_Hosszusag)
+var randomszam_alap2 = randomszam_alap
 
 	if(randomszam_alap < Noun_Hosszusag){
 		document.getElementById('Word').textContent = Object.keys(Nouns)[randomszam_alap];
@@ -38,8 +39,7 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag + Else_Hoss
 
 	document.body.addEventListener('keydown', function(event){
 
-		if((event.key === 'Enter' && clickedin_gender === false && 
-		clickedin_answer === false && clickedin_plural === false && 
+		if((event.key === 'Enter' && clickedin_gender === false && clickedin_plural === false && 
 		window.getComputedStyle(document.getElementById("Der")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
 		window.getComputedStyle(document.getElementById("Die")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
 		window.getComputedStyle(document.getElementById("Das")).backgroundColor.toLowerCase() != "rgb(128, 128, 128)" &&
@@ -65,7 +65,6 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag + Else_Hoss
 	
 			if(randomszam_alap === undefined && checked_in === false){
 				randomszam = getRandomInt(0,Noun_Hosszusag+Verb_Hosszusag+Else_Hosszusag);
-				console.log(randomszam)
 
 				if(randomszam < Noun_Hosszusag){
 					document.getElementById('Word').textContent = Object.keys(Nouns)[randomszam];
@@ -136,15 +135,14 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag + Else_Hoss
 				
 			}
 			else if(randomszam_alap != undefined && checked_in === true){
-				randomszam = randomszam_alap;
+				randomszam = randomszam_alap2
+				;
 				randomszam_alap = undefined;
 			}
 	
 			if(checked_in === true){
 
 				function NoSpaces(Answer,box){
-
-					console.log(Answer)
 
 					if(Answer !== ''){
 						let lst_Answer = []
@@ -178,8 +176,6 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag + Else_Hoss
 							document.getElementById(box).value = Answer;
 						}
 						
-
-
 					}
 					return Answer;
 				}
@@ -206,7 +202,6 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag + Else_Hoss
 					randomszam = randomszam_alap
 				}
 				if(randomszam < Noun_Hosszusag){
-					console.log('BBBBBBBBBBBBBBBBBBBBBBBBBBBBB')
 					Answer_box['Answer_box'] = [document.getElementById('Gender_input').value,Answer,document.getElementById('Plural_input').value]
 					
 					if(Answer_box['Answer_box'][0] == Nouns[Noun_list[randomszam]][0]){
@@ -246,13 +241,9 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag + Else_Hoss
 					}
 				}
 				if (randomszam >= Noun_Hosszusag && randomszam < (Noun_Hosszusag + Verb_Hosszusag)){
-					console.log('AAAAAAAAAAAAAAAAAAAAAAAAA')
 					Answer_box['Answer_box'] = [Answer_Infinitiv,Answer_Präsens,Answer_Präteritum,Answer_Isthat,Answer_Perfekt]
 					
 					randomszam -= Noun_Hosszusag
-
-					console.log('AAAAAAAAAAAAAAAAAAAAAAAAA')
-					console.log(Verbs[Verb_list[randomszam]][0])
 
 					if(Answer_box['Answer_box'][0] == Verbs[Verb_list[randomszam]][0]){
 						document.getElementById('Infinitiv_box').style.color = 'green';
@@ -306,13 +297,13 @@ var randomszam_alap = getRandomInt(0,Noun_Hosszusag + Verb_Hosszusag + Else_Hoss
 
 					randomszam -= Noun_Hosszusag+Verb_Hosszusag
 
-					if(Answer_box['Answer_box'][1].toLowerCase() == Else[Else_list[randomszam]][0].toLowerCase()){
+					if(Answer_box['Answer_box'][1].toLowerCase() == Else[Else_list[randomszam]].toLowerCase()){
 						document.getElementById('Answer_box').style.color = 'green';
 					}
 					else {
 						document.getElementById('Wrong_answer').style.display = 'block';
 						document.getElementById('Wrong_answer').innerText = Answer_box['Answer_box'][1];
-						document.getElementById('Answer_box').value = Else[Else_list[randomszam]][0];
+						document.getElementById('Answer_box').value = Else[Else_list[randomszam]];
 						document.getElementById('Answer_box').style.color = 'red';
 					}
 				}
