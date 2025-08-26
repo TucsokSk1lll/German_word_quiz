@@ -4,13 +4,13 @@ body{
 #Word{
 	color: white;
 	position:absolute;
-	top: calc(60% - 130px);
+	top: calc(50% - 130px);
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 .Gender_box{
 	position: absolute;
-	top: calc(60% - 18px);
+	top: calc(50% - 18px);
 	left: calc(50% - 200px);
 }
 #Gender_input{
@@ -226,7 +226,7 @@ body{
 	width: 200px; 
 	height: 50px; 
 	border-radius: 5px;
-	top: 60%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -235,7 +235,7 @@ body{
 
 .Plural_box{
 	position: absolute;
-    top: calc(60%);
+    top: calc(50%);
 	left: calc(50% + 178px);
     transform: translate(-50%, -50%);
 }
