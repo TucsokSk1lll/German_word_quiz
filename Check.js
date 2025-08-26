@@ -303,7 +303,7 @@ var randomszam_alap2 = randomszam_alap
 					else {
 						document.getElementById('Wrong_answer').style.display = 'block';
 						document.getElementById('Wrong_answer').innerText = Answer_box['Answer_box'][1];
-						document.getElementById('Answer_box').value = Else[Else_list[randomszam]];
+						document.getElementById('Answer_box').value = Else[Else_list[randomszam]].toLowerCase();
 						document.getElementById('Answer_box').style.color = 'red';
 					}
 				}

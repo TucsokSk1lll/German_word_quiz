@@ -281,7 +281,7 @@ body{
 	width: 200px; 
 	height: 50px; 
 	border-radius: 5px;
-	top: 60%;
+	top: 50%;
 	left: calc(50% - 480px);
 	transform: translate(-50%, -50%);
 }
@@ -293,7 +293,7 @@ body{
 	width: 200px; 
 	height: 50px; 
 	border-radius: 5px;
-	top: 60%;
+	top: 50%;
 	left: calc(50% - 240px);
 	transform: translate(-50%, -50%);
 }
@@ -305,7 +305,7 @@ body{
 	width: 200px; 
 	height: 50px; 
 	border-radius: 5px;
-	top: 60%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -317,7 +317,7 @@ body{
 	width: 200px; 
 	height: 50px; 
 	border-radius: 5px;
-	top: 60%;
+	top: 50%;
 	left: calc(50% + 240px);
 	transform: translate(-50%, -50%);
 }
@@ -329,7 +329,7 @@ body{
 	width: 200px; 
 	height: 50px; 
 	border-radius: 5px;
-	top: 60%;
+	top: 50%;
 	left: calc(50% + 480px);
 	transform: translate(-50%, -50%);
 }
@@ -339,7 +339,7 @@ body{
 	font-size: 15px;
 	text-align: center;
 	position: absolute;
-	top: calc(65%);
+	top: calc(55%);
 	left: calc(50% - 192px);
 }
 #wrong_answer{
@@ -348,7 +348,7 @@ body{
 	font-size: 15px;
 	text-align: center;
 	position: absolute;
-	top: calc(65%);
+	top: calc(55%);
 	left: calc(50% - 96px);
 }
 #wrong_plural{
@@ -357,7 +357,7 @@ body{
 	font-size: 15px;
 	text-align: center;
 	position: absolute;
-	top: calc(65%);
+	top: calc(55%);
 	left: calc(50% + 145px);
 }
 #wrong_infinitiv{
@@ -366,7 +366,7 @@ body{
 	font-size: 15px;
 	text-align: center;
 	position: absolute;
-	top: calc(65%);
+	top: calc(55%);
 	left: calc(50% - 573px);
 }
 #wrong_präsens{
@@ -375,7 +375,7 @@ body{
 	font-size: 15px;
 	text-align: center;
 	position: absolute;
-	top: calc(65%);
+	top: calc(55%);
 	left: calc(50% - 333px);
 }
 #wrong_präteritum{
@@ -384,7 +384,7 @@ body{
 	font-size: 15px;
 	text-align: center;
 	position: absolute;
-	top: calc(65%);
+	top: calc(55%);
 	left: calc(50% - 93px);
 }
 #wrong_isthat{
@@ -393,7 +393,7 @@ body{
 	font-size: 15px;
 	text-align: center;
 	position: absolute;
-	top: calc(65%);
+	top: calc(55%);
 	left: calc(50% + 147px);
 }
 #wrong_perfekt{
@@ -402,6 +402,12 @@ body{
 	font-size: 15px;
 	text-align: center;
 	position: absolute;
-	top: calc(65%);
+	top: calc(55%);
 	left: calc(50% + 387px);
+}
+input {
+  padding-left: 0.3%;
+}
+input::placeholder {
+  padding-left: 0.3%;
 }
