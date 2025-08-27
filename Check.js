@@ -55,6 +55,11 @@ var randomszam_alap2 = randomszam_alap
 		window.getComputedStyle(document.getElementById("Infinitiv_box")).display === 'none') || 
 		(event.key === 'Enter' &&
 		window.getComputedStyle(document.getElementById("Answer_box")).display === 'none')){
+
+
+		document.querySelector('.Gender_box .content').style.display = 'none';
+		document.querySelector('.Plural_box .content').style.display = 'none';
+
 			
 			if(checked_in === false){
 				checked_in = true

@@ -51,7 +51,7 @@ document.getElementById('Gender_input').style.display = 'none';
 				
 			}
 			document.getElementById('Gender_input').focus()
-			if(event.key === "Enter"  && Genderlist_string[index] !== undefined && checked_in === false){
+			if(event.key === "Enter"  && Genderlist_string[index] !== undefined){
 				console.log('enter')
 				document.getElementById("Gender_input").value = Genderlist_string[index];
 				document.querySelector(".gender_box .content").style.display = "none";
@@ -74,20 +74,23 @@ document.getElementById('Gender_input').style.display = 'none';
 		})
 	
 		document.getElementById('Gender_input').addEventListener("click", function(event){
-			clickedin_gender = true
+			if (checked_in === false){
+				clickedin_gender = true
 	
-			document.querySelector(".gender_box .content").style.display = "block";
-			document.getElementById('Der').style.display = 'block';
-			document.getElementById('Die').style.display = 'block';
-			document.getElementById('Das').style.display = 'block';
-			document.querySelector(".plural_box .content").style.display = "none";
-			event.stopPropagation();
-	
-			document.querySelector(".Gender_box").addEventListener("keydown", Gender_box_arrows);	
+				document.querySelector(".gender_box .content").style.display = "block";
+				document.getElementById('Der').style.display = 'block';
+				document.getElementById('Die').style.display = 'block';
+				document.getElementById('Das').style.display = 'block';
+				document.querySelector(".plural_box .content").style.display = "none";
+				event.stopPropagation();
+		
+				document.querySelector(".Gender_box").addEventListener("keydown", Gender_box_arrows);	
+			}
+			
 	
 		});
 		document.getElementById('Gender_input').addEventListener('focus', function(event){
-			if (document.getElementById('Gender_input').id === 'Gender_input') {
+			if (document.getElementById('Gender_input').id === 'Gender_input' && checked_in === false) {
 				clickedin_gender = true
 				document.querySelector(".gender_box .content").style.display = "block";
 				document.querySelector(".Gender_box").addEventListener("keydown", Gender_box_arrows);	

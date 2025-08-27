@@ -83,7 +83,7 @@ var clickedin_plural = false
 				}
 				
 			}
-			if(event.key === "Enter"  && Plurallist_string[index] !== undefined && checked_in === false){
+			if(event.key === "Enter"  && Plurallist_string[index] !== undefined){
 				document.getElementById("Plural_input").value = Plurallist_string[index];
 				console.log(Plurallist_string[index])
 				document.querySelector(".plural_box .content").style.display = "none";
@@ -103,20 +103,22 @@ var clickedin_plural = false
 		})
 	
 		document.getElementById('Plural_input').addEventListener("click", function(event){
-	
-			clickedin_plural = true
-			//console.log(clickedin_plural)
-	
-	
-			document.querySelector(".plural_box .content").style.display = "block";
-			document.querySelector(".gender_box .content").style.display = "none";
-			event.stopPropagation();
-	
-			document.querySelector(".Plural_box").addEventListener("keydown", Plural_box_arrows);	
+			if (checked_in === false){
+				clickedin_plural = true
+				//console.log(clickedin_plural)
+		
+		
+				document.querySelector(".plural_box .content").style.display = "block";
+				document.querySelector(".gender_box .content").style.display = "none";
+				event.stopPropagation();
+		
+				document.querySelector(".Plural_box").addEventListener("keydown", Plural_box_arrows);	
+			}
+			
 	
 		});
 		document.getElementById('Plural_input').addEventListener('focus', function(event){
-			if (document.getElementById('Plural_input') && document.getElementById('Plural_input').id === 'Plural_input') {
+			if (document.getElementById('Plural_input') && document.getElementById('Plural_input').id === 'Plural_input'  && checked_in === false) {
 				clickedin_plural = true
 				document.querySelector(".Plural_box .content").style.display = "block";
 				document.querySelector(".Plural_box").addEventListener("keydown", Plural_box_arrows);	
